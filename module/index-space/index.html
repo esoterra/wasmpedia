@@ -13,17 +13,17 @@
       
       
       
-        <link rel="prev" href="../global/">
+        <link rel="prev" href="../instructions/">
       
       
-        <link rel="next" href="../../kebab-names/">
+        <link rel="next" href="../function/">
       
       <link rel="icon" href="../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>Data - Wasmpedia</title>
+        <title>Index Spaces - Wasmpedia</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-module" class="md-skip">
+        <a href="#index-spaces-module" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data
+              Index Spaces
             
           </span>
         </div>
@@ -448,11 +448,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../index-space/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Index Spaces
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Index Spaces
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-item-index-spaces" class="md-nav__link">
+    Module Item Index Spaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-index-spaces" class="md-nav__link">
+    Function Index Spaces
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -462,18 +510,16 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
       
       
       
@@ -482,7 +528,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_7">
           <span class="md-nav__icon md-icon"></span>
           Item
@@ -549,21 +595,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
         Data
       </a>
-      
     </li>
   
 
@@ -651,6 +687,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#module-item-index-spaces" class="md-nav__link">
+    Module Item Index Spaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-index-spaces" class="md-nav__link">
+    Function Index Spaces
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -664,14 +722,14 @@
                   
 
 
-<h1 id="data-module">Data (Module)<a class="headerlink" href="#data-module" title="Permanent link">&para;</a></h1>
-<p><a href="../">Modules</a> may define byte data that's stored inside of them.</p>
-<p>Data has two types:</p>
-<ul>
-<li><strong>Active</strong> - which is loaded into linear memory at initialization time.</li>
-<li><strong>Passive</strong> - which is loaded into memory when requested.</li>
-</ul>
-<p>Each module can define data in data "segments" within the data section.</p>
+<h1 id="index-spaces-module">Index Spaces (Module)<a class="headerlink" href="#index-spaces-module" title="Permanent link">&para;</a></h1>
+<p>Wasm Modules refer to various items by their "index".</p>
+<p>Each type of item in a given scope has an index space which maps unsigned integers to items of that type.
+Whenever a new item of a given type is defined in a scope it is assigned the index one larger than the last item of that type.</p>
+<p>In other words, items are referred to using zero-indexed numbers which correspond to the order the items are imported or defined.</p>
+<h2 id="module-item-index-spaces">Module Item Index Spaces<a class="headerlink" href="#module-item-index-spaces" title="Permanent link">&para;</a></h2>
+<p>Some index spaces exist at the [Module] scope.</p>
+<h2 id="function-index-spaces">Function Index Spaces<a class="headerlink" href="#function-index-spaces" title="Permanent link">&para;</a></h2>
 
 
 

@@ -417,9 +417,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Export
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Export
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#export-types" class="md-nav__link">
+    Export Types
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -459,6 +490,20 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../index-space/" class="md-nav__link">
+        Index Spaces
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
       
     
@@ -467,17 +512,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
       
       
       
-        <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
           Item
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_3_6">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_7">
           <span class="md-nav__icon md-icon"></span>
           Item
         </label>
@@ -635,6 +680,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#export-types" class="md-nav__link">
+    Export Types
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -649,7 +709,42 @@
 
 
 <h1 id="export-module">Export (Module)<a class="headerlink" href="#export-module" title="Permanent link">&para;</a></h1>
-<p>TODO</p>
+<p>An export represents some resource that a <a href="../">Module</a> provides when instantiated. </p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td><a href="./">identifier</a></td>
+<td>field name</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td><a href="./">external kind</a></td>
+<td>the kind of export</td>
+</tr>
+<tr>
+<td><code>index</code></td>
+<td>index</td>
+<td>an index into an <a href="../index-space/">index space</a></td>
+</tr>
+</tbody>
+</table>
+<p>Functionally, exports take an item in the index space and make it externally-available.</p>
+<h2 id="export-types">Export Types<a class="headerlink" href="#export-types" title="Permanent link">&para;</a></h2>
+<p>It's possible to export all of the same types that can be <a href="../import/#import-types">imported</a>.</p>
+<ul>
+<li><a href="../function/">Function</a></li>
+<li><a href="../table/">Table</a></li>
+<li><a href="../memory/">Memory</a></li>
+<li><a href="../global/">Global</a></li>
+</ul>
 
 
 
