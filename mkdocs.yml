@@ -27,9 +27,9 @@
 # | - https://www.mkdocs.org/user-guide/configuration/#site_url                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-site_name: MkDocs Template
-site_description: 'A template for future MkDocs wikis'
-site_author: 'Andre_601'
+site_name: Wasmpedia
+site_description: 'An open source encyclopedia for WebAssembly (Wasm)'
+site_author: 'Kyle Brown'
 #site_url: 'https://www.andre601.ch/mkdocs-template' # Uncomment to set a canonical URL
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -75,8 +75,8 @@ docs_dir: docs/
 # | - https://www.mkdocs.org/user-guide/configuration/#edit_uri                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-repo_name: Andre601/mkdocs-template
-repo_url: https://github.com/Andre601/mkdocs-template
+# repo_name: Kylebrown9/wasmpedia
+# repo_url: https://github.com/Kylebrown9/wasmpedia
 #edit_uri: tree/master/docs # Uncomment to define a different URI/URL for the "edit" option
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -94,6 +94,22 @@ repo_url: https://github.com/Andre601/mkdocs-template
 # +--------------------------------------------------------------------------------------------------------+
 nav:
   - Welcome: index.md
+  - Component:
+    - Overview: component/index.md
+  - Module:
+    - Overview: module/index.md
+    - Import: module/import.md
+    - Export: module/export.md
+    - Value: module/value.md
+    - Instructions: module/instructions.md
+    - Item:
+      - Function: module/function.md
+      - Table: module/table.md
+      - Memory: module/memory.md
+      - Global: module/global.md
+      - Data: module/data.md
+  - Other:
+    - 'Kebab Names': ./kebab-names.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -151,7 +167,7 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#favicon             |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #favicon: 'assets/images/favicon.png'
+  favicon: 'assets/images/favicon.ico'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -179,29 +195,19 @@ theme:
     # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-scheme              |
     # |                                                                                                    |
     # +----------------------------------------------------------------------------------------------------+
-    scheme: 'slate'
-    
-    # +----------------------------------------------------------------------------------------------------+
-    # |                                                                                                    |
-    # | "primary" is used to set the main color of the Material Theme.                                     |
-    # |                                                                                                    |
-    # | The primary color is used on the top banner of the page but also for things like the link color.   |
-    # |                                                                                                    |
-    # | Read More:                                                                                         |
-    # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color             |
-    # |                                                                                                    |
-    # +----------------------------------------------------------------------------------------------------+
-    primary: 'indigo'
-    
-    # +----------------------------------------------------------------------------------------------------+
-    # |                                                                                                    |
-    # | The "accent" is used for moments such as hovering over links.                                      |
-    # |                                                                                                    |
-    # | Read More:                                                                                         |
-    # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color              |
-    # |                                                                                                    |
-    # +----------------------------------------------------------------------------------------------------+
-    accent: 'indigo'
+    - scheme: slate
+      primary: 'purple'
+      accent: 'indigo'
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+    - scheme: default
+      primary: 'purple'
+      accent: 'indigo'
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
     
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -234,7 +240,7 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/                           |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #language: 'en'
+  language: 'en'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -247,7 +253,7 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#directionality            |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  #direction: 'ltr'
+  direction: 'ltr'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -280,7 +286,7 @@ theme:
   #- navigation.expand      # Expand all collapsable sections.
   #- navigation.instant     # Instant loading pages.
   #- navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
-  #- navigation.sections    # Render top sections as groups.
+  - navigation.sections    # Render top sections as groups.
   - navigation.tabs         # Render top sections as tabs at the top.
   #- navigation.tabs.sticky # Tabs won't disappear when scrolling down. Requires "navigation.tabs".
   #- navigation.top         # Adds a "Back to top" that is shown when scrolling up.
