@@ -7,14 +7,13 @@
 [ISA]: https://en.wikipedia.org/wiki/Instruction_set_architecture
 
 # Wasmpedia
-An Open Source encyclopedia for WebAssembly (Wasm)
+An Open Source encyclopedia for WebAssembly (Wasm).
+
+This project is *very* early WIP.
 
 ## What is Wasm?
-WebAssembly, or "wasm", is a general-purpose virtual [ISA] designed to be a compilation target for a wide variety of programming languages. Much of its distinct personality derives from its security, code compression, and decoding optimization features.
-
-The unit of WebAssembly code is the [Module]. Modules consist of a header followed by a sequence of sections. There are sections describing a WebAssembly's interactions with other modules ([Imports] and [Exports]), sections declaring [data] and other implements used by the module, and sections defining [functions].
+WebAssembly, or "wasm", is a general-purpose virtual [ISA] designed to be a compilation target for a wide variety of programming languages. Wasm was originally designed for the web, but is being used in many places outside of it. The features it needed to succeed in the web make it portable, secure, and fast which is something we need in all kinds of applications. 
 
 ## What content goes here?
-For now, we'll only host content about Wasm 2.0 to get started.
 
-In the future, we may add content about Wasm proposals and ecosystem tools.
+In the future, we may add content about the ecosystem and specific runtimes / tools, but for now we will stick to wasm concepts and proposals.

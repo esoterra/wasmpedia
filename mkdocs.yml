@@ -102,6 +102,7 @@ nav:
     - Export: module/export.md
     - Value: module/value.md
     - Instructions: module/instructions.md
+    - 'Index Spaces': module/index-space.md
     - Item:
       - Function: module/function.md
       - Table: module/table.md
@@ -196,14 +197,14 @@ theme:
     # |                                                                                                    |
     # +----------------------------------------------------------------------------------------------------+
     - scheme: slate
-      primary: 'purple'
+      primary: '#4c32edff'
       accent: 'indigo'
       toggle:
         icon: material/weather-night
         name: Switch to light mode
 
     - scheme: default
-      primary: 'purple'
+      primary: '#654ff0ff'
       accent: 'indigo'
       toggle:
         icon: material/brightness-7
@@ -327,9 +328,9 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#logo                |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  icon:
-    logo: 'material/library'
-    repo: 'material/library'
+  # icon:
+  logo: 'assets/images/WebAssembly_Logo_Inverted.svg'
+    # repo: 'material/library'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |

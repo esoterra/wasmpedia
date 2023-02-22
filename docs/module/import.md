@@ -1,6 +1,7 @@
 [Module]: ./
 [identifier]: ./
 [external kind]: ./
+[index space]: ./index-space.md
 
 [Function]: ./function.md
 [Table]: ./table.md
@@ -20,7 +21,7 @@ An import represents some resource that a [Module] needs to be supplied in order
 
 Instantiating a Module requires the embedding to bind items of the correct type to each import.
 
-Functionally, imports take an externally-defined item and bring it into the corresponding index space for that items type.
+Functionally, imports take an externally-defined item and bring it into the corresponding [index space] for that items type.
 
 ## Import Types
 
