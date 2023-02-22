@@ -264,7 +264,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../host/" class="md-tabs__link">
+      <a href="../../general/host/" class="md-tabs__link">
         General
       </a>
     </li>
@@ -443,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../host/" class="md-nav__link">
+      <a href="../../general/host/" class="md-nav__link">
         Host
       </a>
     </li>
@@ -457,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guest/" class="md-nav__link">
+      <a href="../../general/guest/" class="md-nav__link">
         Guest
       </a>
     </li>
@@ -471,8 +471,78 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kebab-names/" class="md-nav__link">
+      <a href="../../general/parametric-linking/" class="md-nav__link">
+        Parametric Linking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/robust-composition/" class="md-nav__link">
+        Robust Composition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/shared-nothing/" class="md-nav__link">
+        Shared Nothing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/lifting-lowering/" class="md-nav__link">
+        Lifting & Lowering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/kebab-names/" class="md-nav__link">
         Kebab Names
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/index-space/" class="md-nav__link">
+        Index Spaces
       </a>
     </li>
   
@@ -523,6 +593,98 @@
       <a href="../../component/" class="md-nav__link">
         Overview
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/import/" class="md-nav__link">
+        Import
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/export/" class="md-nav__link">
+        Export
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/value/" class="md-nav__link">
+        Value
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          Item
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Item
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../component/function/" class="md-nav__link">
+        Function
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -688,20 +850,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../index-space/" class="md-nav__link">
-        Index Spaces
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
     
       
     
@@ -710,17 +858,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
       
       
       
-        <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
           Item
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_4_7">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_6">
           <span class="md-nav__icon md-icon"></span>
           Item
         </label>
@@ -865,7 +1013,7 @@
 
 
 <h1 id="import-module">Import (Module)<a class="headerlink" href="#import-module" title="Permanent link">&para;</a></h1>
-<p>An import represents some resource that a <a href="./">Module</a> needs to be supplied in order to work. </p>
+<p>An import represents some resource that a <a href="./">Module</a> needs to be supplied in order to work.</p>
 <table>
 <thead>
 <tr>
@@ -892,8 +1040,9 @@
 </tr>
 </tbody>
 </table>
-<p>Instantiating a Module requires the embedding to bind items of the correct type to each import.</p>
-<p>Functionally, imports take an externally-defined item and bring it into the corresponding <a href="../index-space/">index space</a> for that items type.</p>
+<p>Instantiating a Module requires the embedding to bind items of the correct type to each import,
+which is called <a href="../../general/parametric-linking/">parametric linking</a>.</p>
+<p>Functionally, imports take an externally-defined item and bring it into the corresponding <a href="../../general/index-space/">index space</a> for that items type.</p>
 <h2 id="import-types">Import Types<a class="headerlink" href="#import-types" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../function/">Function</a><ul>
@@ -917,7 +1066,7 @@
 </li>
 </ul>
 <h2 id="import-binding">Import Binding<a class="headerlink" href="#import-binding" title="Permanent link">&para;</a></h2>
-<p>When a <a href="./">Module</a> is instantiated, its imports can be satisfied by either the <a href="../../host/">Host</a> or another <a href="../../guest/">Guest</a> Module.</p>
+<p>When a <a href="./">Module</a> is instantiated, its imports can be satisfied by either the <a href="../../general/host/">Host</a> or another <a href="../../general/guest/">Guest</a> Module.</p>
 
 
 
