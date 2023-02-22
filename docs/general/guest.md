@@ -1,5 +1,5 @@
-[Modules]: ./module/index.md
-[Components]: ./component/index.md 
+[Modules]: ../module/index.md
+[Components]: ../component/index.md 
 [Host]: ./host.md
 
 # Guest

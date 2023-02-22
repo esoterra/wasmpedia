@@ -2,7 +2,7 @@
 [identifier]: ./
 [identifier]: ./
 [external kind]: ./
-[index space]: ./index-space.md
+[index space]: ../general/index-space.md
 
 [Function]: ./function.md
 [Table]: ./table.md

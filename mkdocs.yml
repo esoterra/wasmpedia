@@ -75,18 +75,30 @@ docs_dir: docs/
 nav:
   - Welcome: index.md
   - General:
-    - Host: ./host.md
-    - Guest: ./guest.md
-    - 'Kebab Names': ./kebab-names.md
+    - Host: ./general/host.md
+    - Guest: ./general/guest.md
+    - 'Parametric Linking': ./general/parametric-linking.md
+    - 'Robust Composition': ./general/robust-composition.md
+    - 'Shared Nothing': ./general/shared-nothing.md
+    - 'Lifting & Lowering': ./general/lifting-lowering.md
+    - 'Kebab Names': ./general/kebab-names.md
+    - 'Index Spaces': ./general/index-space.md
   - Component:
     - Overview: component/index.md
+    - Import: component/import.md
+    - Export: component/export.md
+    - Value: component/value.md
+    - Item:
+      # - Type: ./
+      # - Module: ./
+      # - Instance: ./
+      - Function: ./component/function.md
   - Module:
     - Overview: module/index.md
     - Import: module/import.md
     - Export: module/export.md
     - Value: module/value.md
     - Instructions: module/instructions.md
-    - 'Index Spaces': module/index-space.md
     - Item:
       - Function: module/function.md
       - Table: module/table.md

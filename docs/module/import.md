@@ -1,9 +1,9 @@
 [Module]: ./
-[Host]: ../host.md
-[Guest]: ../guest.md
+[Host]: ../general/host.md
+[Guest]: ../general/guest.md
 [identifier]: ./
 [external kind]: ./
-[index space]: ./index-space.md
+[index space]: ../general/index-space.md
 
 [Function]: ./function.md
 [Table]: ./table.md
@@ -13,7 +13,7 @@
 
 # Import (Module)
 
-An import represents some resource that a [Module] needs to be supplied in order to work. 
+An import represents some resource that a [Module] needs to be supplied in order to work.
 
 | Field Name      | Type                 | Description                              |
 | --------------- | -------------------- | ---------------------------------------- |
@@ -21,7 +21,8 @@ An import represents some resource that a [Module] needs to be supplied in order
 | `export_name`   | [identifier]         | the name of the export in that module    |
 | `kind`          | [external kind]      | the kind of import                       |
 
-Instantiating a Module requires the embedding to bind items of the correct type to each import.
+Instantiating a Module requires the embedding to bind items of the correct type to each import,
+which is called [parametric linking](../general/parametric-linking.md).
 
 Functionally, imports take an externally-defined item and bring it into the corresponding [index space] for that items type.
 
