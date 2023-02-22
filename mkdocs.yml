@@ -74,6 +74,10 @@ docs_dir: docs/
 # +--------------------------------------------------------------------------------------------------------+
 nav:
   - Welcome: index.md
+  - General:
+    - Host: ./host.md
+    - Guest: ./guest.md
+    - 'Kebab Names': ./kebab-names.md
   - Component:
     - Overview: component/index.md
   - Module:
@@ -89,8 +93,6 @@ nav:
       - Memory: module/memory.md
       - Global: module/global.md
       - Data: module/data.md
-  - Other:
-    - 'Kebab Names': ./kebab-names.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

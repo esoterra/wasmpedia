@@ -1,4 +1,6 @@
 [Module]: ./
+[Host]: ../host.md
+[Guest]: ../guest.md
 [identifier]: ./
 [external kind]: ./
 [index space]: ./index-space.md
@@ -37,3 +39,6 @@ Functionally, imports take an externally-defined item and bring it into the corr
 * [Global]
     * Imported globals must be immutible.
 
+## Import Binding
+
+When a [Module] is instantiated, its imports can be satisfied by either the [Host] or another [Guest] Module.
